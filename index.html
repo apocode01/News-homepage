@@ -10,7 +10,9 @@
 <body>
   <div class="wrapper">
     <header>
-      <img src="assets/images/logo.svg" alt="News site logo">
+      <a href="#">
+        <img src="assets/images/logo.svg" alt="News site logo">
+      </a>
       <nav>
         <ul class="navigation-categories">
           <li><a href="#">Home</a></li>
@@ -25,7 +27,10 @@
     <main>
       <section class="main-article">
         <div class="main-article-img">
-          <img src="assets/images/image-web-3-desktop.jpg" alt="Geometrical shapes">
+          <picture>
+            <source media="(max-width: 31rem)" srcset="assets/images/image-web-3-mobile.jpg">
+            <img src="assets/images/image-web-3-desktop.jpg" alt="Geometrical shapes">
+          </picture>
         </div>
 
         <div class="main-article-title">
@@ -87,12 +92,5 @@
       </article>
     </main>
   </div>
-
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/apocode01" target="_blank">Apostolos Panousakis</a>.
-    </div>
-  </footer>
 </body>
 </html>
