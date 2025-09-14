@@ -56,6 +56,10 @@ header {
     margin-block-end: clamp(1.5rem, 1.508vw + 1.198rem, 3rem);
 }
 
+nav {
+    background-color: transparent;
+}
+
 .navigation-categories {
     display: flex;
     flex-direction: row;
@@ -289,7 +293,9 @@ main {
 }
 
 @media only screen and (max-width: 29.5rem) {
-    .closed-overlay {
+    .overlay {
+        display: block;
+        z-index: -1;
         height: 100vh;
         width: 100vw;
         top: 0;
@@ -300,9 +306,10 @@ main {
         transition: all 250ms ease-out;
     }
 
-    .closed-overlay.enabled {
+    .overlay.enabled {
         opacity: 0.5;
         transition: all 250ms ease;
+        z-index: 1;
     }
 
     nav {
@@ -314,11 +321,13 @@ main {
         right: 0;
         height: 100vh;
         width: 75%;
-        max-width: 320px;
         background: var(--Off-white);
         box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
         padding: clamp(1.25rem, 1.256vw + 0.999rem, 2.5rem);
         z-index: 1; 
+    }
+
+    nav.closed {
         transition: all 250ms ease-out;
     }
 
