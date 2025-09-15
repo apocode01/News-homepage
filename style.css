@@ -130,11 +130,14 @@ main {
     padding: clamp(0.75rem, 0.251vw + 0.7rem, 1rem) clamp(1.5rem, 0.503vw + 1.399rem, 2rem);
     color: var(--veryDarkBlue);
     font-family: 'Inter', sans-serif;
+    font-size: clamp(0.938rem, 0.346vw + 0.848rem, 1.125rem);
     font-weight: 800;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     cursor: pointer;
     transition: all 250ms ease-out;
+    width: fit-content;
 }
 
 .read-more-btn:hover {

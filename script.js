@@ -16,10 +16,10 @@ navMenuCloseBtn.addEventListener('click', () => {
     closedOverlay.classList.remove(`enabled`);
 })
 
-const mq = window.matchMedia("(min-width: 29.5rem)");
+const mq = window.matchMedia("(max-width: 29.5rem)");
 mq.addEventListener("change", (e) => {
-    if (e.matches) {
+    if (!e.matches) {
         menu.classList.remove("closed", "open");
-        closedOverlay.classList.remove(`enabled`);
+        closedOverlay.classList.remove("enabled");
     }
 });
