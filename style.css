@@ -237,16 +237,6 @@ main {
     color: var(--darkGrayishBlue);
 }
 
-.attribution { 
-    font-size: clamp(0.688rem, 0.063vw + 0.675rem, 0.75rem); 
-    text-align: center; 
-    margin-block-start: clamp(1.25rem, 1.256vw + 0.999rem, 2.5rem);
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-
 @media only screen and (max-width: 66.2rem) {
     main {
         grid-template-columns: 1fr 1fr;
@@ -365,7 +355,7 @@ main {
     }
 
     .navigation-categories a {
-        font-size: 1.5rem;
+        font-size: clamp(1.25rem, 2.632vw + 0.724rem, 1.5rem);
         color: var(--veryDarkBlue);
         text-decoration: none;
         transition: color 250ms ease-out;
